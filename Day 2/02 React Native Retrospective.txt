@@ -1,0 +1,5 @@
+- 2014: time spent on mobile overtook time on desktop
+- Platform specific code leads to knowledge silos
+- "Learn once, write anywhere"
+- RN feels like web dev, targetting a different platform
+- RN enables fast feedback – no compile cycle – easier to prototype UI

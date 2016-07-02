@@ -1,0 +1,2 @@
+Libraries:
+- https://github.com/reactjs/react-art - vector graphics library

@@ -1,0 +1,23 @@
+Libraries: 
+- Adrenaline (Redux) (https://github.com/gyzerok/adrenaline)
+- Apollo (Redux) (https://github.com/apollostack/apollo)
+- Lokka
+
+New features:
+- Batch API (query string)
+- @defer: Defer query parts, sent as patches over a single network request
+- @stream: get each item in serial rather than parallel and send as soon as they are ready
+
+Real time updates:
+- Polling is inefficient
+- Issues with websockets/0MQ/notifications:
+    + under/overfetching
+    + versioning
+- @live: implements observables, sending delta payloads
+
+GraphQL subscriptions:
+- Data dependencies:
+    + FB has no reactive backend and hard to detect when data has change e.d. likeSentence example
+    + Instead clients subscribe to an action with a GraphQL query
+    + Works for many subcribers with different queries
+    + API is similar to `mutation` – can reuse the same fragments across read, write and subscribe

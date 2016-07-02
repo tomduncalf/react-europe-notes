@@ -1,0 +1,33 @@
+Keynote
+
+Redux:
+	- constraints and contracts vs features
+	- everything is data
+	
+	- Co-locate reducers and selectors
+	- Higher order reducers - independent of your reducer shape
+		- undoable (redux-undo)
+		- Redux-optimistic-ui
+		- React-redux-form
+	- Middleware:
+		- Redux-logger
+		- Redux-observable (RxJS)
+		- Apollo-client (GraphQL)
+
+	- Enhancers - similar to inheritance, but composable as they are just functions
+		- React-batched-subscribe
+		- Redux-loop
+
+	- Contracts need to be defined as carefully as APIs
+	- Make constraints useful
+	- Make contracts social (e.g. composable)
+	- Design the way out (e.g. can use reducer independently of Redux due to contracts - just a function)
+
+	- Libraries:
+		- MobX
+		- Cerebral
+
+	- Talks:
+		- Immutable App Architecture (Lee Byron)
+		- egghead.io/redux-2
+		

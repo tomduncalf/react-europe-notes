@@ -1,0 +1,15 @@
+- Problem: generic endpoints sent too much data when not needed. URL parameters unwieldy.
+- Falcor allows you to expose multiple services as a single JSON endpoint
+- Falcor handles caching
+- "Demand Driven Architecture(/Design)"
+- Falcor may be easier to integrate gradually as less presciptive, fewer concepts
+
+- Falcor does not require you to define a schema or use a query syntax - just JS paths (inc. range and multiple properties)
+- JSON is for trees – but most domain models are graphs
+- Falcor introduces JSON Graph - JSON + references cf. symlinks - $ref helper
+- falcor-express-middleware
+- Falcor.HttpDataSource
+
+- Any pure function can be represented as a map
+- Falcor better suited for less dynamic queries – predictable query shapes
+- With Falcor each application can decide how to update components

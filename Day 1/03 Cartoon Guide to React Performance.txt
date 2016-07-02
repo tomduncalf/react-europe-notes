@@ -1,0 +1,5 @@
+Projects:
+    - Mozilla experimental browser
+
+    - scU can take longer than re-render – immutable data avoids this by allowing ref. checks
+    - (redux) connecting items lower in the tree can offer performance benefits as they get a smaller slice of state

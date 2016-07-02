@@ -1,0 +1,19 @@
+- HOC: Component => EnhancedComponent
+- HOC wraps the input component in a container component
+- Container vs presentational components - do more of this
+- fetchResource example
+- HOC = parameterized container component
+
+- onlyUpdateForKeys
+- withContext
+- test – show spinner example
+- mapPropsStream (rx-recompose) - let's you use RX operators - see ResctConf talk
+
+- Use less shouldComponentUpdate
+
+- HOCs aren't free - every (e.g. wrapper) component has a cost
+- createEagerElement can flatten component heirarchy (vs. lazy)
+    - "referentially transparent functional component"
+    - "component squashing"
+    - can only flatten functional components
+- compose(mapPropsStream(t1), mapPropsStream(t2), mapPropsStream(t3)) = mapPropsStream(compose(t1, t2, t3)) - flatten class based components (as long as they don't use lifecycle methods)

@@ -1,0 +1,19 @@
+Phases:
+- Infer:
+    + Flow builds up a "scope" of variables that are in scope
+    + Stores types in a type heap
+    + Scope is a map of variable name => variable type (pointer to type heap)
+    + Initially inspect left hand side of assignment, creates an "open" type (OpenT) (placeholder for a type we don't know yet) with an assigned unique ID (e.g. OpenT0)
+    + Inspect right hand side, store info in type heap e.g. string { value: "abcd" }
+    + Flow constraint created between new string type and OpenT – so string type flows into open type
+        - Traditional approach is to be as eager as possible to find out type of variable – so "this is a string"
+        - However in dynamic languages, types can change - e.g. it is OK to reassign null to a variable as long as a null check happens later
+        - Flow continues to analyse code to decide the type of var
+    + e.g. for "a.lenght", create a "use type" (action) GetPropT:
+        - flow constraint between variables OpenT type to GetPropT use type
+    + End result is a flow graph 
+    
+- Evaluate:
+    + Flow looks up rules for each "flow" in the graph
+    + Whenever anything flows into an OpenT, that type flows into the next type - so the OpenT can be "ignored"
+    + When type flows into use type, create InstanceT pointing to the prototype and LookupT which is similar to GetPropT but looks up the prototype chain for the property

@@ -1,0 +1,8 @@
+Projects:
+- Subdivide: split into panes
+- swarmlog: distributed something or other / redux-swarmlog
+
+- recon-js - component intelligence for React applications
+
+Cross platform charting:
+- Library: Victory

@@ -1,0 +1,21 @@
+redux-worker:
+- 60 fps = 16ms per frame, 8ms taken for DOM render
+- https://github.com/keyanzhang/redux-worker-middleware
+
+Becoming a developer:
+- beginner friendly articles
+- mentors
+
+CSS in JS without compromise:
+- https://github.com/js-next/react-style (EOL)
+- https://github.com/blakeembrey/react-free-style
+- https://github.com/Khan/aphrodite
+- vstyle
+
+Onsen UI:
+- HTML5 widgets for Native functionality
+- http://onsen.io/ReactEurope
+
+Making JS initialize faster:
+- Create a snapshot of the JS after the initialization
+- 3x faster startup for React

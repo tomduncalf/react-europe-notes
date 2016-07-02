@@ -1,0 +1,24 @@
+Principles:
+- Think in terms of graphs, not endpoints
+- Single source of truth
+- Thin API layer
+
+Authorization:
+- Authorization should not be interface or storage driven
+- GraphQL > Business Logic (auth lives here) > Storage Layer
+- GraphQL is a thin API layer
+- "Single source of truth" – model class - gen method returns null if not authorized
+    + static async gen(viewer: Viewer, id: number)
+    + Common pattern for authorization logic in FB code
+- viewer is passed through as 3rd context arg 
+
+Batching:
+- Carried out at business logic
+- See DataLoader on npm
+
+Caching:
+- DataLoader caches
+- Globally unique cache key
+- Refetch identifier
+- Client comprehension is an anti-pattern
+    + IDs should be opaque to clients - e.g. prefix + base64 encode

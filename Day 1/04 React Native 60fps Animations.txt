@@ -1,0 +1,2 @@
+Libraries:
+    - animated.js - general purpose animated value library (but RN focussed)
